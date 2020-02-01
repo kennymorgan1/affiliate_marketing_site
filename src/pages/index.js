@@ -4,10 +4,13 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Banner from "../components/banner"
+import { graphql } from "gatsby"
 
-const IndexPage = () => (
+const IndexPage = (data) => (
   <Layout>
     <SEO title="Home" />
+    <Banner />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
@@ -19,3 +22,4 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+

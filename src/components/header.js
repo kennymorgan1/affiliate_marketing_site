@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => (
         </div>
         <div className="col-sm-12 col-md-8 align-self-center">
           <nav>
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav mr-5">
               <li className="nav-item active">
                 <Link className="nav-link" to="/">Home</Link>
               </li>
@@ -33,15 +33,15 @@ const Header = ({ siteTitle }) => (
               <li className="nav-item">
                 <Link className="nav-link" to="/about">About</Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/contact-us">Contact</Link>
-              </li>
+              </li> */}
             </ul>
-            <div className="header-cart">
+            {/* <div className="header-cart">
               <Link className="Header__summary snipcart-summary snipcart-checkout" to="#">
                 <i className="fas fa-cart-plus"></i>
               </Link>
-            </div>
+            </div> */}
           </nav>
         </div>
       </div>

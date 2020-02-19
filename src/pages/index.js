@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
@@ -8,11 +8,11 @@ import LatestBlogs from "../components/latestBlog"
 // import Countdown from "../components/countdown"
 import StarRatingComponent from 'react-star-rating-component';
 
-class IndexPost extends React.Component {
-  constructor(props) {
-    super(props);
+class IndexPost extends Component {
+  // constructor(props) {
+  //   super(props);
 
-  }
+  // }
 
   render() {
 

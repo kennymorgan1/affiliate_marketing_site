@@ -1,11 +1,11 @@
-import React from "react"
+import React, { Component } from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StarRatingComponent from 'react-star-rating-component';
 
-class IndexPost extends React.Component {
+class IndexPost extends Component {
   constructor(props) {
     super(props);
     this.state = {

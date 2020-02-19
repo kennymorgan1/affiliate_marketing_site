@@ -16,12 +16,12 @@ const ProductDetails = data => (
             <Tabs>
               {data.data.contentfulProduct.productMorePhotos.map(items => (
                 <TabPanel key={items.id}>
-                  <Tab><img src={items.fixed.src} /></Tab>
+                  <Tab><img src={items.fixed.src} alt="tab_image" /></Tab>
                 </TabPanel>
               ))}
               <TabList>
                 {data.data.contentfulProduct.productMorePhotos.map(items => (
-                  <Tab key={items.id}><img src={items.fixed.src} /></Tab>
+                  <Tab key={items.id}><img src={items.fixed.src} alt="image_2"/></Tab>
                 ))}
               </TabList>
             </Tabs>}

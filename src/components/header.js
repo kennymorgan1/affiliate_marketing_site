@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
     <div className="container">
       <div className="row">
         <div className="col-sm-12 col-md-4 align-self-center">
-          <Link className="header-logo" to="/"><img src={logo}></img></Link>
+          <Link className="header-logo" to="/"><img src={logo} alt="Logo"></img></Link>
         </div>
         <div className="col-sm-12 col-md-8 align-self-center">
           <nav>

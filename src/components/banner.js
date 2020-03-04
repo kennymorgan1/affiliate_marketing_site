@@ -29,7 +29,7 @@ export default class Banner extends Component {
                   <div>
                     <span className="sub-title">{items.node.subHeading}</span>
                     <h1>{items.node.title}</h1>
-                    <Link to="/store">Shop Now</Link>
+                    <Link style={{backgroundColor:"#1A63A7"}} to="/store">Shop Now</Link>
                   </div>
                 </div>
               </div>

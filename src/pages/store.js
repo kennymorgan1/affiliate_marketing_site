@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StarRatingComponent from 'react-star-rating-component';
+import NumberFormat from "react-number-format";
 
 class IndexPost extends Component {
   constructor(props) {
@@ -58,19 +59,28 @@ class IndexPost extends Component {
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
                     <div className="col-sm-4 align-self-center">
-                      <span className="price">${items.node.price}</span>
+                    <span className="price">
+                        <NumberFormat
+                          thousandSeparator={true}
+                          prefix={"NGN "}
+                          value={items.node.price}
+                          style={{ border: "none" }}
+                        />
+                      </span>
                     </div>
                     <div className="col-sm-8 text-right align-self-center">
                       <a
-                        href="#"
+                        href={items.node.slug}
+                        target="_blank"
                         className="Product snipcart-add-item"
                         data-item-id={items.node.slug}
                         data-item-price={items.node.price}
                         data-item-image={items.node.image === null ? "" : items.node.image.fixed.src}
                         data-item-name={items.node.name}
                         data-item-url={`/`}
+                        style={{backgroundColor:"#1A63A7", color:"#000", border:"#1A63A7"}}
                       >
-                        <i className="fas fa-shopping-bag" />Add to Cart
+                        <i className="fas fa-shopping-bag" />Buy Now
                     </a>
                     </div>
                   </div>

@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const ProductDetails = data => (
+  // console.log(data)
+  
   < Layout >
 
     <SEO title={data.data.contentfulProduct.name} keywords={[`gatsby`, `application`, `react`]} />

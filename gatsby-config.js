@@ -1,7 +1,15 @@
+var dotenv = require("dotenv")
+dotenv.config()
+
+const { spaceId, accessToken } = process.env
+
+console.log("app process", process.env)
+
+
 module.exports = {
   siteMetadata: {
     title: `Affiliate marketing site`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `E-commerce and blog site.`,
     author: `@Kennymorgan`,
   },
   plugins: [
@@ -15,6 +23,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,6 +36,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId,
+        accessToken,
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

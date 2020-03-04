@@ -69,7 +69,7 @@ span.price{font-weight:bold;font-size:30px;}
 .store-page .product-main{margin-top:30px;}
 .details-page .product-details{margin-top:30px;}
 .with-underline{position:relative;text-align:left;display:inline-block;margin-bottom:40px;padding-bottom:8px;}
-.with-underline:after{content:"";position:absolute;height:2px;width:100%;left:0;right:0;background:#ef3d56;top:100%;}
+.with-underline:after{content:"";position:absolute;height:2px;width:100%;left:0;right:0;background:#1A63A7;top:100%;}
 
 /* slider css */
 .countdown-section{position:relative;margin-bottom:0;}

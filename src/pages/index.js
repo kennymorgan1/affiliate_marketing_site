@@ -42,15 +42,14 @@ class IndexPost extends Component {
                   />
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
-                    <div className="col-sm-4 align-self-center">
-                      <span className="price">
+                    <div className="col-sm-2 align-self-center">
+                      {/* <span className="price"> */}
                         <NumberFormat
                           thousandSeparator={true}
                           prefix={"NGN "}
                           value={items.node.price}
-                          style={{ border: "none" }}
+                          // style={{ border: "none", overflowX: "hidden" }}
                         />
-                      </span>
                     </div>
                     <div className="col-sm-8 text-right align-self-center">
                       <a

@@ -59,14 +59,14 @@ class IndexPost extends Component {
                   <p>{items.node.details.childMarkdownRemark.excerpt}</p>
                   <div className="row">
                     <div className="col-sm-4 align-self-center">
-                    <span className="price">
+                    {/* <span className="price"> */}
                         <NumberFormat
                           thousandSeparator={true}
                           prefix={"NGN "}
                           value={items.node.price}
                           style={{ border: "none" }}
                         />
-                      </span>
+                      {/* </span> */}
                     </div>
                     <div className="col-sm-8 text-right align-self-center">
                       <a
